@@ -32,6 +32,16 @@ You need to add the following to the `default.project.json` under the already ex
 },
 ```
 
+**Connect Rojo to Roblox Studio**
+
+This step does the wiring between rojo and roblox studio. This is so my dependencies in `Packages` and other `src/` contents will appear in roblox studio.
+
+1. In Roblox Studio ensure you have the rojo plugin added already 
+2. Need to enable HTTP apis so in roblox studio (file -> game settings -> security -> allow http requests)
+3. In the terminal in VSCode run: `rojo serve`, you'll see soemthing like address port, and url for localhost:portNumber. Leave this running in terminal
+4. In roblox studio, connect to this server. (In plugins, click Rojo -> Connect (it should pick up the local server automatically) -> And accept (this shows what files it sees alredy))
+
 #### Resources
 
 - Wally: https://wally.run/install
+- Rojo: https://rojo.space/
