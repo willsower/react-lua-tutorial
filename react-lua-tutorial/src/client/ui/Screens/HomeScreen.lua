@@ -9,6 +9,11 @@ return function()
     Size = UDim2.fromScale(1, 1),
     BackgroundTransparency = 1,
   }, {
-    MyButton = element(Button)
+    MyButton = element(Button, {
+      text = "Click Me",
+      onClick = function()
+        print("Button here was clicked yay!!")
+      end
+    })
   })
 end
