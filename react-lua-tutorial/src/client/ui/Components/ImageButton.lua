@@ -7,5 +7,5 @@ return function(props)
   return element("ImageButton", {
     Size = props.size or UDim2.fromOffset(50, 50),
     Image = props.image,
-  })
+  }, props.children)
 end
