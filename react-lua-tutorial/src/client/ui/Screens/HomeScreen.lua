@@ -1,6 +1,5 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local React = require(ReplicatedStorage.Packages.react) 
-local Button = require(script.Parent.Parent.Components.Button)
 local ImageButton = require(script.Parent.Parent.Components.ImageButton)
 
 local Icons = require(ReplicatedStorage.Shared.assets.Icons)
@@ -20,11 +19,16 @@ return function()
     }, {
       FlexLayout = element("UIListLayout", {
         FillDirection = Enum.FillDirection.Horizontal,
-        Padding = UDim.new(0, 10)
+        Padding = UDim.new(0, 10),
+        SortOrder = Enum.SortOrder.LayoutOrder
       }),
 
       SettingsButton = element(ImageButton, {
-        size = UDim2.fromOffset(50, 50)
+        size = UDim2.fromOffset(40, 40),
+        image = Icons["Settings"],
+        backgroundColor = Color3.fromRGB(28,31,36),
+        backgroundTransparency = 0.1,
+        layoutOrder = 1,
       }, {
         element("UICorner", {
           CornerRadius = UDim.new(0, 50)
@@ -32,7 +36,11 @@ return function()
       }),
 
       InventoryButton = element(ImageButton, {
-        size = UDim2.fromOffset(50, 50)
+        size = UDim2.fromOffset(40, 40),
+        image = Icons["Backpack"],
+        backgroundColor = Color3.fromRGB(28,31,36),
+        backgroundTransparency = 0.1,
+        layoutOrder = 2,
       }, {
         element("UICorner", {
           CornerRadius = UDim.new(0, 50)
@@ -40,7 +48,11 @@ return function()
       }),
 
       CosmeticButton = element(ImageButton, {
-        size = UDim2.fromOffset(50, 50)
+        size = UDim2.fromOffset(40, 40),
+        image = Icons["Tools"],
+        backgroundColor = Color3.fromRGB(28,31,36),
+        backgroundTransparency = 0.1,
+        layoutOrder = 3,
       }, {
         element("UICorner", {
           CornerRadius = UDim.new(0, 50)
