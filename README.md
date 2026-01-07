@@ -45,3 +45,4 @@ This step does the wiring between rojo and roblox studio. This is so my dependen
 
 - Wally: https://wally.run/install
 - Rojo: https://rojo.space/
+- Roblox Developer: https://create.roblox.com/dashboard/creations
