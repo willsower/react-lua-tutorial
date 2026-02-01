@@ -1,6 +1,6 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local React = require(ReplicatedStorage.Packages.react) 
-local ImageButton = require(script.Parent.Parent.Components.ImageButton)
+local ImageButton = require(script.Parent.Parent.Lib.ImageButton)
 
 local Icons = require(ReplicatedStorage.Shared.assets.Icons)
 

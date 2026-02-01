@@ -1,3 +1,4 @@
 return {
-  Home = require(script.HomeScreen)
+  Home = require(script.HomeScreen),
+  Lobby = require(script.LobbyScreen)
 }

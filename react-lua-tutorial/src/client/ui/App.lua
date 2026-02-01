@@ -5,7 +5,7 @@ local Screens = require(script.Parent.Screens)
 local element = React.createElement
 
 return function()
-  local currentScreen, setCurrentScreen = React.useState("Home")
+  local currentScreen, setCurrentScreen = React.useState("Lobby")
 
   return element("ScreenGui", {
     ResetOnSpawn = false
